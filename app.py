@@ -19,7 +19,7 @@ def dynamic_recommendations(row):
 df['personalized_materials'] = df.apply(dynamic_recommendations, axis=1)
 
 # Streamlit UI
-st.title("📚 Personalized Learning Recommendation System")
+st.title("📚  AI-Driven Personalized Learning Experience Platform")
 
 student_index = st.number_input("Enter Student Row Number", min_value=0, max_value=len(df)-1, value=0)
 student_data = df.iloc[student_index]
